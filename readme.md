@@ -88,12 +88,12 @@ Authorization Token 22555
 "created_by": "7"
 }
 ```
-- **endpoint:** polls/<id>/
+- **endpoint:** polls/<id>
 - **method:** GET 
 
 Authorization Token 22555
 
-- **endpoint:**  polls/<id>/choices/
+- **endpoint:**  polls/<id>/choices
 - **method:** POST
 
 ```json
@@ -105,7 +105,7 @@ Authorization Token 22555
 Header: Content-Type application/json
 Authorization Token 22555
 
-- **endpoint:** polls/<id>/
+- **endpoint:** polls/<id>
 - **method:** DELETE
 
 Authorization Token 
