@@ -37,44 +37,20 @@ $ python manage.py migrate
 $ python manage.py startapp polls
 
 ```
+ Em INSTALLED_APPS adicionar: 'rest_framework','polls',
+
+ ``` bash
+$ python manage.py makemigrations polls
+$ python manage.py migrate
+$ python manage.py createsuperuser
+$ python manage.py shell
+```
+
+Serializers permitem que os dados instâncias do modelo e querysets sejam convertidos em dados nativos do python para serem facilmente renderizados em Json
 
 
 ## 💻 API Endpoints
 
-
-- **endpoint:** `/users/register/`
-- **method:** `POST`
-- **params:** 
-```json
-{
-	"username": "carca",
-	"password": "carcassonne"
-}
-```
-
-- Em INSTALLED_APPS adicionar
-- 'rest_framework','polls',
-- Notique ao Django que houve mudanças no models(novos modelos criados e as mudanças devem ser aplicadas as migrações)
-
-- > python manage.py makemigrations polls
-- > python manage.py migrate
-
-- Crie o arquivo urls.py em polls urls
-- Inclua o caminho em urls.py em pollsapi
-- Registre os models em admin
-- Por equanto a api terá doia endpoints retornado o JSON format : /polls /polls/<id>/
-
-- Crie um super usuário
-
-- > python manage.py createsuperuser
-- Serializers permitem que os dados instâncias do modelo e querysets sejam convertidos em dados nativos do python para serem facilmente renderizados em Json
-
-- Acesso ao shell
-
-- > python manage.py shell
-
-Em header 
-Authorization: Token <your token>
 
 - **endpoint:** /users/
 - **method:** POST 
@@ -85,7 +61,7 @@ Authorization: Token <your token>
 "password": "Carl123"
 }
 ```
-Header: Content-Type application/json
+- Header: Content-Type application/json
 - **endpoint:** /login/
 - **method:** POST 
 ```json
@@ -94,19 +70,18 @@ Header: Content-Type application/json
 "password": "Carl123"
 }
 ```
-return token
 
-Header: Content-Type application/json
+- Header: Content-Type application/json
 - **endpoint:** /polls/
 - **method:** GET
 
-Authorization Token 22555
+ - Authorization Token 22555
 
 - **endpoint:** /polls/
 - **method:** POST
 
-Header: Content-Type application/json
-Authorization Token 22555
+- Header: Content-Type application/json
+- Authorization Token 22555
 ```json
 {
 "question": "Flask",
@@ -116,8 +91,7 @@ Authorization Token 22555
 - **endpoint:** polls/<id>/
 - **method:** GET 
 
-Authorization Token 22555
-
+- Authorization Token 22555
 
 - **endpoint:**  polls/<id>/choices/
 - **method:** POST
@@ -128,10 +102,10 @@ Authorization Token 22555
 "poll": '7'
 }
 ```
-Header: Content-Type application/json
-Authorization Token 22555
+- Header: Content-Type application/json
+- Authorization Token 22555
 
 - **endpoint:** polls/<id>/
- - **method:** DELETE
+- **method:** DELETE
 
-Authorization Token 22555
+- Authorization Token 22555
