@@ -24,19 +24,34 @@
 
 <br />
 
+## :pencil: Instalação da aplicação 
+
+Para instalação é necessário ter o python na máquina.
+#### :cherry_blossom: Front End
+  ``` bash
+$ python3 - m venv myvenv
+$ pip install Django
+$ pip install djangorestframework
+$ django-admin startproject pollsapi
+$ python manage.py migrate
+$ python manage.py startapp polls
+
+```
 
 
+## 💻 API Endpoints
 
-- > criar ambiente virtual python
-- > pip install Django
-- > pip install djangorestframework
-- > django-admin startproject pollsapi
 
-- Constroe as tabelas necessárias no banco de dados
-- > python manage.py migrate 
-- Criando o app
-- > python manage.py startapp polls
- 
+- **endpoint:** `/users/register/`
+- **method:** `POST`
+- **params:** 
+```json
+{
+	"username": "carca",
+	"password": "carcassonne"
+}
+```
+
 - Em INSTALLED_APPS adicionar
 - 'rest_framework','polls',
 - Notique ao Django que houve mudanças no models(novos modelos criados e as mudanças devem ser aplicadas as migrações)
@@ -61,55 +76,62 @@
 Em header 
 Authorization: Token <your token>
 
-End Points:
-POST : /users/
-
+- **endpoint:** /users/
+- **method:** POST 
+```json
 {
 "username": "Carl",
 "email": "Carl@gmail.com",
 "password": "Carl123"
 }
-
+```
 Header: Content-Type application/json
-
-POST : /login/
-
+- **endpoint:** /login/
+- **method:** POST 
+```json
 {
 "username": "Carl",
 "password": "Carl123"
 }
-
+```
 return token
 
 Header: Content-Type application/json
-
-GET: /polls/
+- **endpoint:** /polls/
+- **method:** GET
 
 Authorization Token 22555
 
-POST : /polls/
+- **endpoint:** /polls/
+- **method:** POST
+
 Header: Content-Type application/json
 Authorization Token 22555
+```json
 {
 "question": "Flask",
 "created_by": "7"
 }
-
-GET : polls/7/
+```
+- **endpoint:** polls/<id>/
+- **method:** GET 
 
 Authorization Token 22555
 
 
+- **endpoint:**  polls/<id>/choices/
+- **method:** POST
 
-POST: polls/7/choices/
-
+```json
 {
 "choice_text": "Aqui",
 "poll": '7'
 }
-
+```
 Header: Content-Type application/json
 Authorization Token 22555
 
-DELETE: polls/7/
+- **endpoint:** polls/<id>/
+ - **method:** DELETE
+
 Authorization Token 22555
