@@ -93,7 +93,7 @@ Authorization Token 22555
 
 Authorization Token 22555
 
-- **endpoint:**  polls/<id>/choices
+- **endpoint:**  polls/id/choices
 - **method:** POST
 
 ```json
