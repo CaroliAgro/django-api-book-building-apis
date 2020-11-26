@@ -1,9 +1,10 @@
 <h1 align="center">
-  Api com autenticação e permisão de usuário (sobre enquestes e votos) baseada no livro:
+  API com autenticação  de usuário 
 </h1>
 
 <h3 align="center">
-  Api Rest com Django Framework e Interfaces com React.
+  Api Rest com Django Framework baseada no livro: 
+  - [Building APIS](https://readthedocs.org/projects/djangoapibook/downloads/pdf/latest/)
 </h3>
 
 <p align="center">
