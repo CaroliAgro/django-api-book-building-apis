@@ -75,7 +75,7 @@ Header: Content-Type application/json
 - **endpoint:** polls/
 - **method:** GET
 
-Authorization Token 22555
+Authorization Token xxx
 
 - **endpoint:** polls/
 - **method:** POST
@@ -91,7 +91,7 @@ Authorization Token 22555
 - **endpoint:** polls/<id>
 - **method:** GET 
 
-Authorization Token 22555
+Authorization Token xxxx
 
 - **endpoint:**  polls/id/choices
 - **method:** POST
@@ -103,9 +103,9 @@ Authorization Token 22555
 }
 ```
 Header: Content-Type application/json
-Authorization Token 22555
+Authorization Token xxx
 
 - **endpoint:** polls/<id>
 - **method:** DELETE
 
-Authorization Token 
+Authorization Token xxxx
