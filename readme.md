@@ -52,7 +52,7 @@ Serializers permitem que os dados instâncias do modelo e querysets sejam conver
 ## 💻 API Endpoints
 
 
-- **endpoint:** /users/
+- **endpoint:** users/
 - **method:** POST 
 ```json
 {
@@ -62,7 +62,7 @@ Serializers permitem que os dados instâncias do modelo e querysets sejam conver
 }
 ```
 Header: Content-Type application/json
-- **endpoint:** /login/
+- **endpoint:** login/
 - **method:** POST 
 ```json
 {
@@ -72,12 +72,12 @@ Header: Content-Type application/json
 ```
 
 Header: Content-Type application/json
-- **endpoint:** /polls/
+- **endpoint:** polls/
 - **method:** GET
 
 Authorization Token 22555
 
-- **endpoint:** /polls/
+- **endpoint:** polls/
 - **method:** POST
 
 Header: Content-Type application/json
