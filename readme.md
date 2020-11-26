@@ -4,8 +4,8 @@
 
 <h3 align="center">
   Api Rest com Django Framework baseada no livro: 
-  - [Building APIS](https://readthedocs.org/projects/djangoapibook/downloads/pdf/latest/)
 </h3>
+- [Building APIS](https://readthedocs.org/projects/djangoapibook/downloads/pdf/latest/)
 
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Bonizario/proffy?color=6842C2">
