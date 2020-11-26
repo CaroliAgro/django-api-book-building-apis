@@ -61,7 +61,7 @@ Serializers permitem que os dados instâncias do modelo e querysets sejam conver
 "password": "Carl123"
 }
 ```
-- Header: Content-Type application/json
+Header: Content-Type application/json
 - **endpoint:** /login/
 - **method:** POST 
 ```json
@@ -71,17 +71,17 @@ Serializers permitem que os dados instâncias do modelo e querysets sejam conver
 }
 ```
 
-- Header: Content-Type application/json
+Header: Content-Type application/json
 - **endpoint:** /polls/
 - **method:** GET
 
- - Authorization Token 22555
+Authorization Token 22555
 
 - **endpoint:** /polls/
 - **method:** POST
 
-- Header: Content-Type application/json
-- Authorization Token 22555
+Header: Content-Type application/json
+Authorization Token 22555
 ```json
 {
 "question": "Flask",
@@ -91,7 +91,7 @@ Serializers permitem que os dados instâncias do modelo e querysets sejam conver
 - **endpoint:** polls/<id>/
 - **method:** GET 
 
-- Authorization Token 22555
+Authorization Token 22555
 
 - **endpoint:**  polls/<id>/choices/
 - **method:** POST
@@ -99,13 +99,13 @@ Serializers permitem que os dados instâncias do modelo e querysets sejam conver
 ```json
 {
 "choice_text": "Aqui",
-"poll": '7'
+"poll": "7"
 }
 ```
-- Header: Content-Type application/json
-- Authorization Token 22555
+Header: Content-Type application/json
+Authorization Token 22555
 
 - **endpoint:** polls/<id>/
 - **method:** DELETE
 
-- Authorization Token 22555
+Authorization Token 
