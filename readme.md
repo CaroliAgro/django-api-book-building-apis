@@ -1,3 +1,7 @@
+<p align="center">
+  <img alt="Proffy" title="Proffy" src="logo.png" />
+</p>
+
 <h1 align="center">
   API com autenticação  de usuário 
 </h1>
