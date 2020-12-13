@@ -112,4 +112,4 @@ Authorization Token xxx
 - **endpoint:** polls/<id>
 - **method:** DELETE
 
-Authorization Token xxxx
+
